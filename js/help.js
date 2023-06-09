@@ -52,9 +52,9 @@ function initSwiper() {
   const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     spaceBetween: 30,
-    scrollbar: {
-      el: '.swiper-scrollbar',
-      draggable: true,
+    navigation: {
+      nextEl: '.slider-button-next',
+      prevEl: '.slider-button-prev',
     },
   });
 }

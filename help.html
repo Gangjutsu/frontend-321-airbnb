@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-ssss
+
 
 <head>
   <meta charset="UTF-8">
@@ -153,8 +153,6 @@ ssss
             </div>
           </button>
         </div>
-
-
       </div>
     </div>
   </header>
@@ -162,46 +160,66 @@ ssss
   <main>
     <section class="help">
       <div class="container">
-        <h1>Tabs component</h1>
+        <h1 class="help-title">Hi, how can we help?</h1>
 
         <div class="tabs">
           <div class="tabs-list">
-            <button class="tabs-btn tabs-btn__active" data-tabs-path="movies">Movies</button>
-            <button class="tabs-btn" data-tabs-path="shows">Shows</button>
-            <button class="tabs-btn" data-tabs-path="example">Example</button>
+            <button class="tabs-btn tabs-btn__active" data-tabs-path="guest">Guest</button>
+            <button class="tabs-btn" data-tabs-path="host">Host</button>
+            <button class="tabs-btn" data-tabs-path="experience-host">Experience Host</button>
+            <button class="tabs-btn" data-tabs-path="travel-admin">Travel admin</button>
           </div>
 
-          <div class="tabs-content tabs-content__active" data-tabs-target="movies">
+          <div class="tabs-content tabs-content__active" data-tabs-target="guest">
             <div class="content">
-              <h2>Button 1</h2>
+              <h2>Guest</h2>
               <p>Lorem, ipsum dolor. 1</p>
             </div>
           </div>
 
-          <div class="tabs-content" data-tabs-target="shows">
+          <div class="tabs-content" data-tabs-target="host">
             <div class="content">
-              <h2>Button 2</h2>
+              <h2>Host</h2>
               <p>Lorem, ipsum dolor. 2</p>
             </div>
           </div>
 
-          <div class="tabs-content" data-tabs-target="example">
+          <div class="tabs-content" data-tabs-target="experience-host">
             <div class="content">
-              <h2>Button 3</h2>
+              <h2>Experience Host</h2>
+              <p>Lorem, ipsum dolor. 3</p>
+            </div>
+          </div>
+          <div class="tabs-content" data-tabs-target="travel-admin">
+            <div class="content">
+              <h2>Travel admin</h2>
               <p>Lorem, ipsum dolor. 3</p>
             </div>
           </div>
         </div>
 
-        <h2>Guides for getting started</h2>
+        <div class="head-card">
+          <h2>Guides for getting started</h2>
+          <a class="head-card-link" href="#">Browse all topics
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+              focusable="false"
+              style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+              <path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path>
+            </svg>
+          </a>
+        </div>
 
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <!-- вставка данных по карточкам через JS  -->
+        <div class="slider-wrapper">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- вставка данных по карточкам через JS  -->
+            </div>
           </div>
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-button-prev slider-button slider-button-prev"></div>
+          <div class="swiper-button-next slider-button slider-button-next"></div>
         </div>
       </div>
+
     </section>
   </main>
 

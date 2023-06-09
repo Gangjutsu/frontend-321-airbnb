@@ -1,6 +1,6 @@
 /* карточки */
-const fetchData = async () => {
-  return fetch('../data.json')
+const fetchData = () => {
+  return fetch('../data/data.json')
     .then(res => {
 
       if (res.ok) {

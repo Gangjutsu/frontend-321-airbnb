@@ -1,22 +1,28 @@
-/* карточки */
-const fetchData = () => {
-  return fetch('../data/data.json')
-    .then(res => {
+// /* карточки */
+// const fetchData = () => {
+//   return fetch('../data.json')
+//     .then(res => {
 
-      if (res.ok) {
-        return res.json();
-      } else {
-        throw new Error('Network response was not ok');
-      }
+//       if (res.ok) {
+//         return res.json();
+//       } else {
+//         throw new Error('Network response was not ok');
+//       }
 
 
-    })
-    .catch(error => {
-      console.error('Error:', error);
-      return [];
-    });
+//     })
+//     .catch(error => {
+//       console.error('Error:', error);
+//       return [];
+//     });
 
-};
+// };
+
+
+async function fetchData() {
+  const res = await fetch('../data.json');
+  return await res.json();
+}
 
 const renderData = async () => {
   try {
